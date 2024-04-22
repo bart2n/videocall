@@ -1,0 +1,81 @@
+:root {
+    --shaddow:0 4px 6px -1px rgba(0,0,0,0.1),0 2px 4px -1px rgba(0,0,0,0.06);
+  }
+
+body{
+    background-color: rgba(232,233,239,1);
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* ------------------  Register Page ------------------ */
+
+#form-container{
+    width: 400px;
+    box-shadow:var(--shaddow);
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+#logo{
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+}
+
+/*--------ROOM Styling--------*/
+
+#video-streams{
+    display:flex;
+    flex-wrap: wrap;
+    height: 85vh;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.video-container{
+    flex-basis:500px;
+    flex-grow:1;
+    max-height: 100%;
+    min-height: 350px;
+    border: 1px solid rgb(75,95,172);
+    border-radius: 5px;
+    margin: 2px;
+    background-color: rgba(198, 202, 219, 1);
+}
+.video-player{
+    height: 100%;
+    width: 100%;
+}
+/*--------ROOM Styling--------*/
+
+#controls-wrapper{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    column-gap: 1em;
+    padding: 5px 20px;
+    position: fixed;
+    bottom:20px;
+
+
+}
+
+.control-icon{
+    height: 20px;
+    width: 20px;
+    box-shadow: var(--shaddow);
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#leave-btn{
+    background-color: rgb(255, 80, 80, 1);
+}
